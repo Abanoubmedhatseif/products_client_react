@@ -4,7 +4,7 @@ import ProductList from "../components/ProductList";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-const Base_URL = "http://localhost:8080/OOP-task/";
+const Base_URL = process.env.REACT_APP_BASE_URL;
 
 function Products() {
   const [products, setProducts] = useState([]);
